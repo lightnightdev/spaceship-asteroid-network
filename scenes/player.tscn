@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://be8qbmt0fe144"]
+
+[ext_resource type="Texture2D" uid="uid://brrv7s3pgebvn" path="res://assets/SpaceShooterAssetPack_Ships.png" id="1_3vyb7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
+atlas = ExtResource("1_3vyb7")
+region = Rect2(32, 64, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u8vuu"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g2els")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Player" type="Node2D" unique_id=880625393]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=171976072]
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_u8vuu")

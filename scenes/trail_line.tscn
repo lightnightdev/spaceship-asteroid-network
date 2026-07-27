@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://cv420olejfqqo"]
+
+[ext_resource type="Script" uid="uid://d3b3vtkj6x6ra" path="res://scripts/trail_line.gd" id="1_76eed"]
+
+[sub_resource type="Gradient" id="Gradient_ypw4n"]
+colors = PackedColorArray(0.544531, 0.69793487, 0.9650963, 1, 1, 1, 1, 1)
+
+[node name="TrailLine" type="Line2D" unique_id=178698291]
+width = 5.0
+gradient = SubResource("Gradient_ypw4n")
+script = ExtResource("1_76eed")
