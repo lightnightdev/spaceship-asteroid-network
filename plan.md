@@ -11,6 +11,8 @@
 ## To Dos
 
 - Create start/win state
+	- Make target regenerate, at spawn make it giant then narrow into a selected asteroid
+- Make asteroids change color when landed on. Also, change brown to bluish-gray.
 - Create camera adjusting defaults + controls
 
 

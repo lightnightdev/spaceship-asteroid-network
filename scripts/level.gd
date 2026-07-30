@@ -35,7 +35,8 @@ const MAX_ZOOM: float = 3.0
 @onready var target = $Target
 @onready var selector = $Selector
 @onready var camera: Camera2D = $Camera2D
-
+@onready var trail_line_container = $TrailLineContainer
+#
 func _ready() -> void:
 	scanner = GridScanner.new(GRID_BOUNDS, level_data_grid)
 	
@@ -70,15 +71,19 @@ func _setup_default_camera() -> void:
 	if not camera:
 		return
 		
-	# Calculate world center of the 35x30 grid
+	# Calculate the total pixel dimensions of the grid
 	var level_size_px = Vector2(GRID_BOUNDS) * GRID_SIZE
-	camera.global_position = Vector2(0,0)
-	
-	# Fit level within view bounds
 	var viewport_size = get_viewport_rect().size
-	if viewport_size.x > 0 and viewport_size.y > 0:
-		var zoom_factor = min(viewport_size.x / level_size_px.x, viewport_size.y / level_size_px.y)
-		camera.zoom = Vector2(zoom_factor, zoom_factor)
+		
+	# Fit level within view bounds based on viewport size
+	var zoom_factor = min(viewport_size.x / level_size_px.x, viewport_size.y / level_size_px.y)
+	camera.zoom = Vector2(zoom_factor, zoom_factor)
+		
+
+	var level_center = level_size_px / 2.0
+	camera.global_position = level_center
+	
+
 
 func _process(delta: float) -> void:
 	# Selector Movement Input
@@ -133,10 +138,15 @@ func _process_selector_queue() -> void:
 
 func _execute_step(dir: Vector2i) -> void:
 	var result: Dictionary = scanner.scan_jump(selector_grid_pos, dir)
+
+	var start_world_pos = grid_to_world(selector_grid_pos)
+	var border_world_pos = _get_border_world_position(selector_grid_pos, dir)
+		
 	if result.is_empty():
+		_spawn_invalid_trail_segment(start_world_pos, border_world_pos)
+		
 		return
 		
-	var start_world_pos = grid_to_world(selector_grid_pos)
 	var target_grid_pos: Vector2i = result["target_pos"]
 	var end_world_pos = grid_to_world(target_grid_pos)
 	
@@ -147,9 +157,25 @@ func _execute_step(dir: Vector2i) -> void:
 	# Spawn trail line between previous position and new position
 	_spawn_trail_segment(start_world_pos, end_world_pos)
 
+	# 1. Trigger departure from current grid object
+	if player_grid_pos in level_data_grid:
+		var current_obj: GridObject = level_data_grid[player_grid_pos]
+		current_obj.on_player_departed(player)
+
+	# 2. Update player's grid position
+	player_grid_pos = target_grid_pos
+
+	# 3. AWAIT movement completion before letting the queue move to the next step
+	await player.move_towards_dir(dir, end_world_pos, 0.1)
+
+	# 4. Trigger landing logic on target grid object
+	if target_grid_pos in level_data_grid:
+		var target_obj: GridObject = level_data_grid[target_grid_pos]
+		target_obj.on_player_landed(player)
+
 func _spawn_trail_segment(from_pos: Vector2, to_pos: Vector2) -> void:
 	var trail_instance = TrailScene.instantiate()
-	add_child(trail_instance)
+	trail_line_container.add_child(trail_instance)
 	trail_instance.add_trail_segment(from_pos, to_pos)
 
 func spawn_asteroid_node(grid_pos: Vector2i) -> void:
@@ -160,3 +186,35 @@ func spawn_asteroid_node(grid_pos: Vector2i) -> void:
 
 func grid_to_world(pos: Vector2i) -> Vector2:
 	return Vector2(pos.x * GRID_SIZE, pos.y * GRID_SIZE) + Vector2(GRID_SIZE / 2.0, GRID_SIZE / 2.0)
+
+
+func _get_border_world_position(from_grid_pos: Vector2i, dir: Vector2i) -> Vector2:
+	# Start at the center of the current origin cell
+	var target_world = grid_to_world(from_grid_pos)
+	
+	# Extend the ray only along the direction axis to the border center
+	if dir == Vector2i.UP:
+		target_world.y = 0.0
+	elif dir == Vector2i.DOWN:
+		target_world.y = float(GRID_BOUNDS.y) * GRID_SIZE
+	elif dir == Vector2i.LEFT:
+		target_world.x = 0.0
+	elif dir == Vector2i.RIGHT:
+		target_world.x = float(GRID_BOUNDS.x) * GRID_SIZE
+
+	return target_world
+
+func _spawn_invalid_trail_segment(from_pos: Vector2, to_pos: Vector2) -> void:
+	var trail_instance = TrailScene.instantiate()
+	trail_line_container.add_child(trail_instance)
+	
+	# 1. Clear the gradient so default_color takes effect!
+	trail_instance.gradient = null
+	
+	# 2. Set the solid dark red color
+	trail_instance.default_color = Color(0.5, 0.0, 0.0, 1.0)
+	
+	trail_instance.add_trail_segment(from_pos, to_pos)
+	
+	# 3. Set half-second lifespan
+	trail_instance.FADE_DURATION = 0.5

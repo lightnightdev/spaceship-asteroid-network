@@ -1,7 +1,7 @@
 extends Line2D
 
-# Time in seconds for a line segment to completely fade away
-const FADE_DURATION: float = 2.0
+# Changed from 'const' to 'var' so level.gd can override it for invalid move trails
+var FADE_DURATION: float = 2.0
 
 # Holds point metadata: Array of Dictionary { "pos": Vector2, "age": float }
 var point_data: Array[Dictionary] = []
@@ -25,7 +25,7 @@ func _process(delta: float) -> void:
 	while i >= 0:
 		point_data[i]["age"] += delta
 		
-		# Remove points that have exceeded the 5-second lifespan
+		# Remove points that have exceeded the FADE_DURATION lifespan
 		if point_data[i]["age"] >= FADE_DURATION:
 			point_data.remove_at(i)
 			remove_point(i)

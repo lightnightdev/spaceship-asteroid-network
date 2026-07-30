@@ -6,21 +6,23 @@ extends GridObject
 
 var constant_rotation_speed: float = 0.0
 var accumulated_time: float = 0.0
+var initial_frame: int = 0 # Store the initial frame index
+var is_visited: bool = false
 
-const ROTATION_INTERVAL: float = 0.1 # Update 10 times per second instead of 60+
-const ANGLE_STEP: float = 2.0 # Degrees per step
+const ROTATION_INTERVAL: float = 0.05
+const ANGLE_STEP: float = 2.0
 
 func _ready():
 	object_name = "asteroid"
 	jump_type = JumpType.LAND
 	
-	var total_frames = visual.sprite_frames.get_frame_count(visual.animation)
-	visual.frame = randi_range(0, total_frames - 1)
+	# Pick random initial frame and SAVE it
+	var total_frames = visual.sprite_frames.get_frame_count("default")
+	initial_frame = randi_range(0, total_frames - 1)
+	visual.frame = initial_frame
 	
 	rotation_degrees = randf_range(0, 360)
-	
 	reset_rotation()
-
 
 func _process(delta: float) -> void:
 	if not (notifier and notifier.is_on_screen()):
@@ -35,15 +37,18 @@ func _process(delta: float) -> void:
 func reset_rotation():
 	constant_rotation_speed = randf_range(-150.0, 150.0)
 
-# Call this function when the player lands on this asteroid
-func on_player_landed(Node2D) -> void:
+func on_player_landed(player_node: Node2D) -> void:
 	constant_rotation_speed = 0
-	visual.play("landing_vibration") # Switch to landing animation
-	await get_tree().create_timer(1.0).timeout # Wait, then...
-	visual.play("default") # Back to idle
+	if not is_visited:
+		is_visited = true
+		darken_asteroid()
 
-func on_player_departed(Node2D) -> void:
+func darken_asteroid() -> void:
+	# Multiply current RGB values by 0.75 (25% darker)
+	# Modulate multiplies every pixel's color values by this color
+	modulate.r *= 0.5
+	modulate.g *= 0.5
+	modulate.b *= 0.5
+
+func on_player_departed(player_node: Node2D) -> void:
 	reset_rotation()
-	visual.play("leaving_vibration") # Switch to landing animation
-	await get_tree().create_timer(1.0).timeout # Wait, then...
-	visual.play("default") # Back to idle
