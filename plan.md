@@ -8,13 +8,22 @@
 - DAILY TIME ATTACK
 	- View the whole layout, input amounts
 
-## To Dos
-
+## To Do
+- Create Menu
 - Create start/win state
-	- Make target regenerate, at spawn make it giant then narrow into a selected asteroid
-- Make asteroids change color when landed on. Also, change brown to bluish-gray.
-- Create camera adjusting defaults + controls
+	- Make target regenerate
+- Make target
 
+## Ideas
+- Add stars to collect
+- Add "Boost" mode (selector) (10sec countdown?)
+- Add "Super Boost" mode (5 sec countdown?)
+- Add move counter
+- Highlight valid options? (show w/ grid)
+- Hit every tile? Time attack? Limited Moves (BFA * 1.5)
+- Parity
+- Ghosts? that move at select intervals. Have to hit?
+- Tower Defense
 
 	- 
 
