@@ -1,11 +1,13 @@
 class_name LevelGenerator
 extends RefCounted
 
+var scanner: GridScanner
+
 const GRID : Vector2i = Vector2i(35,30)
 const POPULATE : float = 0.08
 const POPULATE_VARIANCE : float = 0.01
 
-static func generate_asteroid_positions(
+static func generate_grid_object_positions(
 		grid_dimensions: Vector2i,
 		target_density: float = 0.08
 	) -> Array[Vector2i]:
@@ -29,5 +31,7 @@ static func generate_asteroid_positions(
 		if index < total_cells:
 			var pos = Vector2i(index % width, index / width)
 			positions.append(pos)
+			
+	positions = NetworkCleaner.clean_grid(positions)
 
 	return positions

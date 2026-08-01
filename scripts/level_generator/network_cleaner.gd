@@ -91,8 +91,8 @@ static func find_networks(points: Array[Vector2i]) -> Array[Array]:
 
 	return result
 
-
-static func find_networks_with_blockers(points: Array[Vector2i], blockers: Dictionary) -> Array[Array]:
+# NOT tested yet!
+static func x_find_networks_with_blockers(points: Array[Vector2i], blockers: Dictionary) -> Array[Array]:
 	if points.is_empty():
 		return []
 

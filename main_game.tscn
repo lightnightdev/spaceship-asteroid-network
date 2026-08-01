@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://dtc28rckgxuxc"]
+
+[node name="MainGame" type="Node" unique_id=443034337]
+
+[node name="UILayer" type="CanvasLayer" parent="." unique_id=1847321102]
+
+[node name="Levels" type="Node2D" parent="." unique_id=236178362]
+
+[node name="Systems" type="Node" parent="." unique_id=1771677241]

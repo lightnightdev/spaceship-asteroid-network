@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://d3vjo73iy6bpt"]
 
 [ext_resource type="Texture2D" uid="uid://d4akhtvhhfhvc" path="res://assets/targets.png" id="1_b37e2"]
+[ext_resource type="Script" uid="uid://j5dasdm6uchp" path="res://scripts/entities/target.gd" id="1_p17q2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b5a2r"]
 atlas = ExtResource("1_b37e2")
@@ -25,6 +26,7 @@ animations = [{
 }]
 
 [node name="Target" type="Node2D" unique_id=1157177100]
+script = ExtResource("1_p17q2")
 
 [node name="AnimatedSprite" type="AnimatedSprite2D" parent="." unique_id=958645057]
 sprite_frames = SubResource("SpriteFrames_ypw4n")

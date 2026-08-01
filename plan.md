@@ -1,15 +1,18 @@
 ## Gameplay Types
-- MAIN MODE
+- STARFARING ADVENTURE
 	- Handcrafted levels, slowly adding features
 - INFINITE COMPETITION
 	- Start at target, pan to player, move to target!
 	- Auto generate levels daily (use a hash of the day for seed lol)
-	- Scoreboard
-- DAILY TIME ATTACK
+	- Scoreboard based on TIME and MOVES
+- TIME ATTACK
 	- View the whole layout, input amounts
 
 ## To Do
-- Create Menu
+- Create GameStartLevel
+	- Create opening cutscene ### DO THIS LATER
+	- Make "HomeWorld"
+	- Make "MenuLevel"
 - Create start/win state
 	- Make target regenerate
 - Make target

@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dbpu02wv6uj5e"]
+
+[ext_resource type="Script" uid="uid://evj7ar5pqi3c" path="res://scripts/classes/grid_world.gd" id="1_2v8sj"]
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="2_02hfs"]
+[ext_resource type="PackedScene" uid="uid://d38ga2sn5okvi" path="res://scenes/entities/selector.tscn" id="3_cdmwa"]
+
+[node name="GridWorld" type="Node2D" unique_id=1040349909]
+script = ExtResource("1_2v8sj")
+
+[node name="AsteroidContainer" type="Node2D" parent="." unique_id=1562689054]
+
+[node name="TrailLineContainer" type="Node2D" parent="." unique_id=725597195]
+
+[node name="EntityContainer" type="Node2D" parent="." unique_id=1144899091]
+
+[node name="Player" parent="." unique_id=880625393 instance=ExtResource("2_02hfs")]
+position = Vector2(68, 69)
+
+[node name="Selector" parent="." unique_id=1666586592 instance=ExtResource("3_cdmwa")]
+position = Vector2(69, 70)

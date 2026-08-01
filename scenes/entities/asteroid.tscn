@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://vefqqywkwd4n"]
 
-[ext_resource type="Script" uid="uid://btpgoaa6vwwse" path="res://scripts/asteroid.gd" id="1_6mo6b"]
+[ext_resource type="Script" uid="uid://btpgoaa6vwwse" path="res://scripts/entities/asteroid.gd" id="1_6mo6b"]
 [ext_resource type="Texture2D" uid="uid://dolr7v12hxguo" path="res://assets/asteroids.png" id="1_akfqu"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6mo6b"]
