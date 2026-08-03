@@ -1,0 +1,596 @@
+Folder PATH listing
+Volume serial number is 000001BD 06A6:042B
+C:\USERS\CHANG\CODE\SPACESHIP-ASTEROID-GAME
+|   .editorconfig
+|   .gitattributes
+|   .gitignore
+|   file_structure.txt
+|   icon.svg
+|   icon.svg.import
+|   main_game.tscn
+|   plan.md
+|   project.godot
+|   
++---.godot
+|   |   .gdignore
+|   |   global_script_class_cache.cfg
+|   |   scene_groups_cache.cfg
+|   |   uid_cache.bin
+|   |   
+|   +---editor
+|   |       asteroid.gd-folding-9a5929b90e8b825716fb6750cdd13bf6.cfg
+|   |       asteroid.tscn-editstate-0f35d0bc19c31b2129d6eee6a03a90c9.cfg
+|   |       asteroid.tscn-editstate-77e02d809253e7327db0f2ff299bab2a.cfg
+|   |       asteroid.tscn-folding-0f35d0bc19c31b2129d6eee6a03a90c9.cfg
+|   |       asteroid.tscn-folding-77e02d809253e7327db0f2ff299bab2a.cfg
+|   |       base_camera.gd-folding-eb97a8b8e3a7daa1be0951673700b8ca.cfg
+|   |       base_level.gd-folding-c816411672945aa0f5cf666d3f87602c.cfg
+|   |       base_level.gd-folding-ce99674a706fb8dceacdd05b963a920d.cfg
+|   |       create_recent.Node
+|   |       debug.gd-folding-f93b8cb2c6c0aebcb901d1f5004fb215.cfg
+|   |       demo_level.gd-folding-86b29903f3af5397b234a147f3373147.cfg
+|   |       demo_level.tscn-editstate-c962e8bf43ff6b5ff21247b348d62ddc.cfg
+|   |       demo_level.tscn-folding-c962e8bf43ff6b5ff21247b348d62ddc.cfg
+|   |       editor_layout.cfg
+|   |       editor_script_doc_cache.res-folding-a7de57390d6e786984ca20c70a831128.cfg
+|   |       favorites
+|   |       favorites.Node
+|   |       favorite_properties
+|   |       filesystem_cache10
+|   |       filesystem_update4
+|   |       grid_object.gd-folding-76c5f32f19386af3f78c20bf480efa83.cfg
+|   |       grid_overlay.gd-folding-4aa395b498b489c8fd9e7aed063c9fa9.cfg
+|   |       grid_scanner.gd-folding-936d833323f048117a7e2830b94e12da.cfg
+|   |       grid_world.gd-folding-39ad57525ff4974a5dadd4edbcf04ce2.cfg
+|   |       grid_world.tscn-editstate-62f5acc2893f7ecc0a6867771864c833.cfg
+|   |       grid_world.tscn-folding-62f5acc2893f7ecc0a6867771864c833.cfg
+|   |       level.gd-folding-e88d9b5e0064514e51c9257f9cdf2f7e.cfg
+|   |       level.tscn-editstate-a0631f9feb269b9ee464fe0e4794e617.cfg
+|   |       level.tscn-folding-a0631f9feb269b9ee464fe0e4794e617.cfg
+|   |       level_generator.gd-folding-f668af2bf51662380d92a7eae8339138.cfg
+|   |       Main.tscn-editstate-4a24720ee5e787dbe30abc634fa3679d.cfg
+|   |       Main.tscn-folding-4a24720ee5e787dbe30abc634fa3679d.cfg
+|   |       MainGame.tscn-editstate-dbfc6818b022d976e0e33ac4dabecd4c.cfg
+|   |       MainGame.tscn-folding-dbfc6818b022d976e0e33ac4dabecd4c.cfg
+|   |       main_game.tscn-editstate-3a689a07f84009fde038ac878f1ae44a.cfg
+|   |       main_game.tscn-editstate-52da0abab86e6d1a7311a08b23751124.cfg
+|   |       main_game.tscn-folding-3a689a07f84009fde038ac878f1ae44a.cfg
+|   |       main_game.tscn-folding-52da0abab86e6d1a7311a08b23751124.cfg
+|   |       network_analyzer.gd-folding-d4e815cf91815ab7b0b193fe2372a7cc.cfg
+|   |       network_cleaner.gd-folding-69790562f708604f0ba97131354d74b3.cfg
+|   |       Nunito-Black.ttf-2a374efbc207a97a99b8c70bdc4b7cbb.fontdata-folding-662749b80c5c044d2b8064c915abfc7a.cfg
+|   |       Nunito-Regular.ttf-b6054d499efa1a10921004862b1e217a.fontdata-folding-b3a527ad226f38b174687fb8e4af5b0f.cfg
+|   |       player.gd-folding-266cf4afe7fb1a19e644760043b6046a.cfg
+|   |       player.tscn-editstate-234fb6894ec6226e856ab7f825500d3d.cfg
+|   |       player.tscn-editstate-60191d8570ad6bb283e7c30c15192e69.cfg
+|   |       player.tscn-folding-234fb6894ec6226e856ab7f825500d3d.cfg
+|   |       player.tscn-folding-60191d8570ad6bb283e7c30c15192e69.cfg
+|   |       project_metadata.cfg
+|   |       recent_dirs
+|   |       script_editor_cache.cfg
+|   |       selector.gd-folding-238ec2069c3e0e6647412f494e747b8a.cfg
+|   |       selector.gd-folding-5e74b81102047647809c1c34386576cc.cfg
+|   |       target.gd-folding-2038b1a37bec2de4efbaac3cfc55c375.cfg
+|   |       target.gd-folding-9da9d20f3631ccb9eec727c5af2b192c.cfg
+|   |       target.tscn-editstate-c8355ef55318190fc99cc91a70523165.cfg
+|   |       target.tscn-editstate-f635ba2759e519dad7ea795ed4e0873f.cfg
+|   |       target.tscn-folding-c8355ef55318190fc99cc91a70523165.cfg
+|   |       target.tscn-folding-f635ba2759e519dad7ea795ed4e0873f.cfg
+|   |       theme.tres-folding-4f46c67cc7d9a94d41450e7d2c070643.cfg
+|   |       tile_map_layer.gd-folding-2254528051e52ace4cfcf8607e75011f.cfg
+|   |       trail_line.gd-folding-4ee2f1b03899a20ac1c9fb64d9c27346.cfg
+|   |       trail_line.tscn-editstate-982460498f0af034ddcfdc893b714a20.cfg
+|   |       trail_line.tscn-editstate-d1008fdbf4e717f92d440ea1a7e87820.cfg
+|   |       trail_line.tscn-folding-982460498f0af034ddcfdc893b714a20.cfg
+|   |       trail_line.tscn-folding-d1008fdbf4e717f92d440ea1a7e87820.cfg
+|   |       
+|   +---imported
+|   |       asteroids.png-31aa57225c0149f928c73650825b22af.ctex
+|   |       asteroids.png-31aa57225c0149f928c73650825b22af.md5
+|   |       asteroids_2.png-bbdb918a5850cfac7d20ca000e73809e.md5
+|   |       asteroids_brown.png-a852ca111136a03baa57cd00a0c594d1.ctex
+|   |       asteroids_brown.png-a852ca111136a03baa57cd00a0c594d1.md5
+|   |       Camera2DIcon.svg-300e6f57281180711c5ecf391104d4ba.ctex
+|   |       Camera2DIcon.svg-300e6f57281180711c5ecf391104d4ba.md5
+|   |       Camera3DIcon.svg-4805c46004db1c89cc9443dd740693f5.ctex
+|   |       Camera3DIcon.svg-4805c46004db1c89cc9443dd740693f5.md5
+|   |       checker_pattern_dark.png-70cedad2d3abf4ad6166d6614eefa7fb.md5
+|   |       checker_pattern_dark.png-70cedad2d3abf4ad6166d6614eefa7fb.s3tc.ctex
+|   |       checker_pattern_dark.png-70cedad2d3abf4ad6166d6614eefa7fb.s3tc.ctex11519233.tmp
+|   |       icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex
+|   |       icon.svg-218a8f2b3041327d8a5756f3a245f83b.md5
+|   |       inventory_container.png-12241277f279bfc4bf7d5dad6b3e8ff2.ctex
+|   |       inventory_container.png-12241277f279bfc4bf7d5dad6b3e8ff2.md5
+|   |       level_spritesheet.png-26a44dd21a040a5480d5ccba54377d99.ctex
+|   |       level_spritesheet.png-26a44dd21a040a5480d5ccba54377d99.md5
+|   |       MyShip.png-860359f4272e5b9a67fa927a5e2fdcda.ctex
+|   |       MyShip.png-860359f4272e5b9a67fa927a5e2fdcda.md5
+|   |       my_space_tiles.png-822494d495ac419a8bdf0cbf9c04032f.ctex
+|   |       my_space_tiles.png-822494d495ac419a8bdf0cbf9c04032f.md5
+|   |       Nunito-Black.ttf-2a374efbc207a97a99b8c70bdc4b7cbb.fontdata
+|   |       Nunito-Black.ttf-2a374efbc207a97a99b8c70bdc4b7cbb.md5
+|   |       Nunito-Regular.ttf-b6054d499efa1a10921004862b1e217a.fontdata
+|   |       Nunito-Regular.ttf-b6054d499efa1a10921004862b1e217a.md5
+|   |       PhantomCameraBtnPrimaryDefault.png-fcf3696b583a82b1078609a5bfd648f5.ctex
+|   |       PhantomCameraBtnPrimaryDefault.png-fcf3696b583a82b1078609a5bfd648f5.md5
+|   |       PhantomCameraBtnPrimaryHover.png-3d2e4d225f6a86ce8a9c981ee7926a16.ctex
+|   |       PhantomCameraBtnPrimaryHover.png-3d2e4d225f6a86ce8a9c981ee7926a16.md5
+|   |       phantom_camera_2d.svg-e5483cbc858fc5f95f7210b1649dff0d.ctex
+|   |       phantom_camera_2d.svg-e5483cbc858fc5f95f7210b1649dff0d.md5
+|   |       phantom_camera_2d_sprite.png-deab230b83ae03aeb308a08ff66b8dbc.ctex
+|   |       phantom_camera_2d_sprite.png-deab230b83ae03aeb308a08ff66b8dbc.md5
+|   |       phantom_camera_3d.svg-41ed612e834470377fb56eebffa083fe.ctex
+|   |       phantom_camera_3d.svg-41ed612e834470377fb56eebffa083fe.md5
+|   |       phantom_camera_camera_3d_resource.svg-f8bf8d1a5b7442fd6933bfbed999d57d.ctex
+|   |       phantom_camera_camera_3d_resource.svg-f8bf8d1a5b7442fd6933bfbed999d57d.md5
+|   |       phantom_camera_gizmo.svg-ba1aacb9b1c5f4ef401d3bd3697a542b.md5
+|   |       phantom_camera_gizmo.svg-ba1aacb9b1c5f4ef401d3bd3697a542b.s3tc.ctex
+|   |       phantom_camera_gizmo.svg-ba1aacb9b1c5f4ef401d3bd3697a542b.s3tc.ctex11609446.tmp
+|   |       phantom_camera_glow_logo.png-078f944973b55b32029ba02980211fe0.ctex
+|   |       phantom_camera_glow_logo.png-078f944973b55b32029ba02980211fe0.md5
+|   |       phantom_camera_host.svg-3150f8f2d82ca9ecab9a3a415da21c5b.ctex
+|   |       phantom_camera_host.svg-3150f8f2d82ca9ecab9a3a415da21c5b.editor.ctex
+|   |       phantom_camera_host.svg-3150f8f2d82ca9ecab9a3a415da21c5b.editor.meta
+|   |       phantom_camera_host.svg-3150f8f2d82ca9ecab9a3a415da21c5b.md5
+|   |       phantom_camera_logo.png-8b8d347b5e4800c86cd8095d030a3e5a.ctex
+|   |       phantom_camera_logo.png-8b8d347b5e4800c86cd8095d030a3e5a.md5
+|   |       phantom_camera_noise_emitter_2d.svg-1b3d37fe36964dc86a6ea6681d0772bb.ctex
+|   |       phantom_camera_noise_emitter_2d.svg-1b3d37fe36964dc86a6ea6681d0772bb.md5
+|   |       phantom_camera_noise_emitter_3d.svg-9b90fe54aa618f65d52ac94515d41ea4.md5
+|   |       phantom_camera_noise_emitter_3d.svg-9b90fe54aa618f65d52ac94515d41ea4.s3tc.ctex
+|   |       phantom_camera_noise_emitter_3d.svg-9b90fe54aa618f65d52ac94515d41ea4.s3tc.ctex11349566.tmp
+|   |       phantom_camera_noise_emitter_gizmo.svg-9a593802655a8d5038c7f55deab3882d.md5
+|   |       phantom_camera_noise_emitter_gizmo.svg-9a593802655a8d5038c7f55deab3882d.s3tc.ctex
+|   |       phantom_camera_noise_emitter_gizmo.svg-9a593802655a8d5038c7f55deab3882d.s3tc.ctex11352569.tmp
+|   |       phantom_camera_noise_resource.svg-a81ed223714edd2c0d9cfa00be0c3f58.ctex
+|   |       phantom_camera_noise_resource.svg-a81ed223714edd2c0d9cfa00be0c3f58.md5
+|   |       phantom_camera_tween.svg-16faced08ef4a5f3458264d894230dbd.ctex
+|   |       phantom_camera_tween.svg-16faced08ef4a5f3458264d894230dbd.editor.ctex
+|   |       phantom_camera_tween.svg-16faced08ef4a5f3458264d894230dbd.editor.meta
+|   |       phantom_camera_tween.svg-16faced08ef4a5f3458264d894230dbd.md5
+|   |       phantom_camera_tween_director.svg-999c3b505bf600b9a4ec1a0f36d7c1b1.ctex
+|   |       phantom_camera_tween_director.svg-999c3b505bf600b9a4ec1a0f36d7c1b1.md5
+|   |       phantom_camera_tween_director_resource.svg-c9a50db0f74687c6a6da2a59e7b47920.ctex
+|   |       phantom_camera_tween_director_resource.svg-c9a50db0f74687c6a6da2a59e7b47920.md5
+|   |       phantom_camera_updater_panel_icon.svg-19823e6cbee8115f8b2554d0ee6e79db.ctex
+|   |       phantom_camera_updater_panel_icon.svg-19823e6cbee8115f8b2554d0ee6e79db.md5
+|   |       player_sprite.svg-8862ecb19e12152eb892607676f3831f.ctex
+|   |       player_sprite.svg-8862ecb19e12152eb892607676f3831f.md5
+|   |       PriorityOverride.svg-e76e07f4bbd98169f119e17fe5f2f03f.ctex
+|   |       PriorityOverride.svg-e76e07f4bbd98169f119e17fe5f2f03f.md5
+|   |       SceneTypesIcon.svg-66e2255bd3398007bec03a5cbfa4d0aa.ctex
+|   |       SceneTypesIcon.svg-66e2255bd3398007bec03a5cbfa4d0aa.md5
+|   |       Select.svg-cdf90b8b400d3b91a023b70c6a823894.ctex
+|   |       Select.svg-cdf90b8b400d3b91a023b70c6a823894.md5
+|   |       selector.png-0b1540b1432614e8750b69967e377448.ctex
+|   |       selector.png-0b1540b1432614e8750b69967e377448.md5
+|   |       sign_prompt.png-18d451127e1cd1a16367acd23cec47e5.ctex
+|   |       sign_prompt.png-18d451127e1cd1a16367acd23cec47e5.md5
+|   |       SpaceShooterAssetPack_BackGrounds.png-40c27d371c0774439f2d44bc4d1df4de.ctex
+|   |       SpaceShooterAssetPack_BackGrounds.png-40c27d371c0774439f2d44bc4d1df4de.md5
+|   |       SpaceShooterAssetPack_IU.png-854a81e89f5e8d080d9dab7768dffa8e.ctex
+|   |       SpaceShooterAssetPack_IU.png-854a81e89f5e8d080d9dab7768dffa8e.md5
+|   |       SpaceShooterAssetPack_Miscellaneous.png-cdc92c18a3467857238f6339f6bff98b.ctex
+|   |       SpaceShooterAssetPack_Miscellaneous.png-cdc92c18a3467857238f6339f6bff98b.md5
+|   |       SpaceShooterAssetPack_Projectiles.png-d0ea00176777889ad4c0cb32bd3a76b6.ctex
+|   |       SpaceShooterAssetPack_Projectiles.png-d0ea00176777889ad4c0cb32bd3a76b6.md5
+|   |       SpaceShooterAssetPack_Ships.png-e2acbfb200d5cd37adc4cd613124f5be.ctex
+|   |       SpaceShooterAssetPack_Ships.png-e2acbfb200d5cd37adc4cd613124f5be.md5
+|   |       target.png-878c5e8d057c8a9a4c2322d4ab88e9ef.md5
+|   |       target.png-878c5e8d057c8a9a4c2322d4ab88e9ef.s3tc.ctex
+|   |       target.png-878c5e8d057c8a9a4c2322d4ab88e9ef.s3tc.ctex11753301.tmp
+|   |       targets.png-3b83b2ba37e57f8ce2a14c74fd68355c.ctex
+|   |       targets.png-3b83b2ba37e57f8ce2a14c74fd68355c.md5
+|   |       tilemap.png-5e61b4f08267e3455a4ee95d454c23fa.ctex
+|   |       tilemap.png-5e61b4f08267e3455a4ee95d454c23fa.md5
+|   |       warning.svg-c1b21c265e0842bbdc9ed10735995366.ctex
+|   |       warning.svg-c1b21c265e0842bbdc9ed10735995366.md5
+|   |       
+|   \---shader_cache
+|       +---CanvasOcclusionShaderGLES3
+|       |   \---12c5e847ba09de35989de51a4a83f1aa7e105c54295f64b2ae3e6ca9bf9b586f
+|       +---CanvasSdfShaderGLES3
+|       |   \---98a97685ee45980513657c12511dce5dbfebbceffc1321d9d62613458096e089
+|       +---CanvasShaderGLES3
+|       |   \---3cceee45fd8cc9a1e8b2e46170ad113b1b65df4fcd79903941dd5415f2f23ee6
+|       |           6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache
+|       |           ac9f21174c92fce4be1f2336542953da756b5030.cache
+|       |           
+|       +---CopyShaderGLES3
+|       |   \---c8ed092b05dfcfa14f0bcad5bc43dc74c371da9ba745f8355677d207cd758f37
+|       |           6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache
+|       |           
+|       +---CubemapFilterShaderGLES3
+|       |   \---e25c216568a7ef141e646b7cea69071b1737e1d2c8bfbac2dcce9030b4fc967f
+|       |           6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache
+|       |           
+|       +---FeedShaderGLES3
+|       |   \---ba1f1b8d1353502aec1c7de4d9a30153904067ac01a5bbcfe34120f394083416
+|       |           6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache
+|       |           
+|       +---GlowShaderGLES3
+|       |   \---5e6d76148d321a634dbce8d2dc3b6c3696e45f7f3f8983babc3204b03d08732b
+|       +---ParticlesCopyShaderGLES3
+|       |   \---984334c0d7422cf5fcd1bac124a1c35246f6ce35efb012d74a710d5a034fec81
+|       +---ParticlesShaderGLES3
+|       |   \---bdbf667ca0e84955154439fa6312ec2b2c38054da0b2f658bc0319bd690e478e
+|       +---PostShaderGLES3
+|       |   \---6098641fcf6b6165801ce364b4d8753db374355cbefee65db150c4a13aa26fe2
+|       |           6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache
+|       |           
+|       +---SceneShaderGLES3
+|       |   \---f64384cca5eaf93bdb9476cd4691fe6b48ff890a9e59f662aafb82c5efc4e9f2
+|       |           6bb7c9a2fd1c4a8fa77cb96555b9b4a720209981.cache
+|       |           a38af2d0725c8e99d8492f4c72736f24d6a54cc5.cache
+|       |           cafb1506f2db0c3681435e264aa18e216d1a7a40.cache
+|       |           
+|       +---SkeletonShaderGLES3
+|       |   \---4ffddbb5a7ef4bc6463b972c5982848406ae3c16b4fb9d4a1490c5e0044b93a9
+|       +---SkyShaderGLES3
+|       |   \---6011771dc2ec1adc586b4b01ec7c7dd07a37fab4356deca4512b0a51f0ee17f4
+|       |           2c82eb5fea9b549e20c9f41e308abf9a4fc5d76f.cache
+|       |           
+|       \---TexBlitShaderGLES3
+|           \---95a05d94d429e5feba888b8bad5cca8d5e33e4509ac4f189d314fc1ee23c6552
++---addons
+|   \---phantom_camera
+|       |   LICENSE
+|       |   plugin.cfg
+|       |   plugin.gd
+|       |   plugin.gd.uid
+|       |   
+|       +---assets
+|       |       PhantomCameraBtnPrimaryDefault.png
+|       |       PhantomCameraBtnPrimaryDefault.png.import
+|       |       PhantomCameraBtnPrimaryHover.png
+|       |       PhantomCameraBtnPrimaryHover.png.import
+|       |       
+|       +---examples
+|       |   |   credits.txt
+|       |   |   
+|       |   +---example_scenes
+|       |   |   +---2D
+|       |   |   |   |   2d_example_scene.tscn
+|       |   |   |   |   2d_follow_framed_example_scene.tscn
+|       |   |   |   |   2d_follow_group_example_scene.tscn
+|       |   |   |   |   2d_follow_path_example_scene.tscn
+|       |   |   |   |   2d_limit_example_scene.tscn
+|       |   |   |   |   2d_noise_example_scene.tscn
+|       |   |   |   |   2d_tweening_example_scene.tscn
+|       |   |   |   |   
+|       |   |   |   \---sub_scenes
+|       |   |   |           playable_character_2d.tscn
+|       |   |   |           
+|       |   |   \---3D
+|       |   |       |   3d_example_scene.tscn
+|       |   |       |   3d_follow_framed_example_scene.tscn
+|       |   |       |   3d_follow_glued_example_scene.tscn
+|       |   |       |   3d_follow_group_example_scene.tscn
+|       |   |       |   3d_follow_path_example_scene.tscn
+|       |   |       |   3d_follow_simple_example_scene.tscn
+|       |   |       |   3d_follow_third_person_attribtues_example_scene.tscn
+|       |   |       |   3d_follow_third_person_example_scene.tscn
+|       |   |       |   3d_look_at_example_scene.tscn
+|       |   |       |   3d_noise_example_scene.tscn
+|       |   |       |   3d_tweening_example_scene.tscn
+|       |   |       |   
+|       |   |       \---sub_scenes
+|       |   |               playable_character_3d.tscn
+|       |   |               playable_character_third_person_3d.tscn
+|       |   |               
+|       |   +---models
+|       |   |       3d_cube_dark.tscn
+|       |   |       
+|       |   +---resources
+|       |   |   \---tween
+|       |   |           fixed_camera_tween.tres
+|       |   |           inventory_phantom_camera_2d_tween.tres
+|       |   |           item_focus_phantom_camera_2d_tween.tres
+|       |   |           player_phantom_camera_2d_tween.tres
+|       |   |           player_phantom_camera_3d_tween.tres
+|       |   |           
+|       |   +---scripts
+|       |   |   +---2D
+|       |   |   |       2d_room_limit_tween.gd
+|       |   |   |       2d_room_limit_tween.gd.uid
+|       |   |   |       2d_trigger_area.gd
+|       |   |   |       2d_trigger_area.gd.uid
+|       |   |   |       player_character_body_2d.gd
+|       |   |   |       player_character_body_2d.gd.uid
+|       |   |   |       
+|       |   |   \---3D
+|       |   |           3d_trigger_area.gd
+|       |   |           3d_trigger_area.gd.uid
+|       |   |           npc.gd
+|       |   |           npc.gd.uid
+|       |   |           path_follow.gd
+|       |   |           path_follow.gd.uid
+|       |   |           player_controller.gd
+|       |   |           player_controller.gd.uid
+|       |   |           player_controller_first_person.gd
+|       |   |           player_controller_first_person.gd.uid
+|       |   |           player_controller_third_person.gd
+|       |   |           player_controller_third_person.gd.uid
+|       |   |           
+|       |   +---textures
+|       |   |   +---2D
+|       |   |   |       inventory_container.png
+|       |   |   |       inventory_container.png.import
+|       |   |   |       level_spritesheet.png
+|       |   |   |       level_spritesheet.png.import
+|       |   |   |       phantom_camera_2d_sprite.png
+|       |   |   |       phantom_camera_2d_sprite.png.import
+|       |   |   |       player_sprite.svg
+|       |   |   |       player_sprite.svg.import
+|       |   |   |       sign_prompt.png
+|       |   |   |       sign_prompt.png.import
+|       |   |   |       
+|       |   |   \---3D
+|       |   |           checker_pattern_dark.png
+|       |   |           checker_pattern_dark.png.import
+|       |   |           target.png
+|       |   |           target.png.import
+|       |   |           
+|       |   \---ui
+|       |           ui_inventory.tscn
+|       |           ui_sign.tscn
+|       |           
+|       +---fonts
+|       |       Nunito-Black.ttf
+|       |       Nunito-Black.ttf.import
+|       |       Nunito-Regular.ttf
+|       |       Nunito-Regular.ttf.import
+|       |       
+|       +---icons
+|       |   |   phantom_camera_2d.svg
+|       |   |   phantom_camera_2d.svg.import
+|       |   |   phantom_camera_3d.svg
+|       |   |   phantom_camera_3d.svg.import
+|       |   |   phantom_camera_camera_3d_resource.svg
+|       |   |   phantom_camera_camera_3d_resource.svg.import
+|       |   |   phantom_camera_gizmo.svg
+|       |   |   phantom_camera_gizmo.svg.import
+|       |   |   phantom_camera_glow_logo.png
+|       |   |   phantom_camera_glow_logo.png.import
+|       |   |   phantom_camera_host.svg
+|       |   |   phantom_camera_host.svg.import
+|       |   |   phantom_camera_logo.png
+|       |   |   phantom_camera_logo.png.import
+|       |   |   phantom_camera_noise_emitter_2d.svg
+|       |   |   phantom_camera_noise_emitter_2d.svg.import
+|       |   |   phantom_camera_noise_emitter_3d.svg
+|       |   |   phantom_camera_noise_emitter_3d.svg.import
+|       |   |   phantom_camera_noise_emitter_gizmo.svg
+|       |   |   phantom_camera_noise_emitter_gizmo.svg.import
+|       |   |   phantom_camera_noise_resource.svg
+|       |   |   phantom_camera_noise_resource.svg.import
+|       |   |   phantom_camera_tween.svg
+|       |   |   phantom_camera_tween.svg.import
+|       |   |   phantom_camera_tween_director.svg
+|       |   |   phantom_camera_tween_director.svg.import
+|       |   |   phantom_camera_tween_director_resource.svg
+|       |   |   phantom_camera_tween_director_resource.svg.import
+|       |   |   phantom_camera_updater_panel_icon.svg
+|       |   |   phantom_camera_updater_panel_icon.svg.import
+|       |   |   warning.svg
+|       |   |   warning.svg.import
+|       |   |   
+|       |   +---misc
+|       |   |       PriorityOverride.svg
+|       |   |       PriorityOverride.svg.import
+|       |   |       
+|       |   \---viewfinder
+|       |           Camera2DIcon.svg
+|       |           Camera2DIcon.svg.import
+|       |           Camera3DIcon.svg
+|       |           Camera3DIcon.svg.import
+|       |           SceneTypesIcon.svg
+|       |           SceneTypesIcon.svg.import
+|       |           Select.svg
+|       |           Select.svg.import
+|       |           
+|       +---inspector
+|       |       phantom_camera_inspector_plugin.gd
+|       |       phantom_camera_inspector_plugin.gd.uid
+|       |       
+|       +---panel
+|       |   |   editor.gd.uid
+|       |   |   editor.tscn
+|       |   |   
+|       |   +---updater
+|       |   |       download_update_panel.tscn
+|       |   |       update_button.tscn
+|       |   |       
+|       |   \---viewfinder
+|       |       |   deadzone_style_box.tres
+|       |       |   viewfinder_panel.tscn
+|       |       |   
+|       |       \---host_list
+|       |               host_list.tscn
+|       |               host_list_item.tscn
+|       |               host_list_item_group.tres
+|       |               
+|       +---scripts
+|       |   +---gizmos
+|       |   |       phantom_camera_3d_gizmo.gd
+|       |   |       phantom_camera_3d_gizmo.gd.uid
+|       |   |       phantom_camera_3d_gizmo_plugin.gd
+|       |   |       phantom_camera_3d_gizmo_plugin.gd.uid
+|       |   |       phantom_camera_noise_emitter_gizmo_plugin_3d.gd
+|       |   |       phantom_camera_noise_emitter_gizmo_plugin_3d.gd.uid
+|       |   |       
+|       |   +---managers
+|       |   |       PhantomCameraManager.cs
+|       |   |       PhantomCameraManager.cs.uid
+|       |   |       phantom_camera_manager.gd
+|       |   |       phantom_camera_manager.gd.uid
+|       |   |       
+|       |   +---panel
+|       |   |   |   editor.gd
+|       |   |   |   editor.gd.uid
+|       |   |   |   
+|       |   |   +---updater
+|       |   |   |       download_update_panel.gd
+|       |   |   |       download_update_panel.gd.uid
+|       |   |   |       updater_constants.gd
+|       |   |   |       updater_constants.gd.uid
+|       |   |   |       update_button.gd
+|       |   |   |       update_button.gd.uid
+|       |   |   |       
+|       |   |   \---viewfinder
+|       |   |           host_list.gd
+|       |   |           host_list.gd.uid
+|       |   |           host_list_item.gd
+|       |   |           host_list_item.gd.uid
+|       |   |           viewfinder.gd
+|       |   |           viewfinder.gd.uid
+|       |   |           
+|       |   +---phantom_camera
+|       |   |       PhantomCamera.cs
+|       |   |       PhantomCamera.cs.uid
+|       |   |       PhantomCamera2D.cs
+|       |   |       PhantomCamera2D.cs.uid
+|       |   |       PhantomCamera3D.cs
+|       |   |       PhantomCamera3D.cs.uid
+|       |   |       PhantomCameraNoiseEmitter2D.cs
+|       |   |       PhantomCameraNoiseEmitter2D.cs.uid
+|       |   |       PhantomCameraNoiseEmitter3D.cs
+|       |   |       PhantomCameraNoiseEmitter3D.cs.uid
+|       |   |       PhantomCameraTweenDirector.cs
+|       |   |       phantom_camera_2d.gd
+|       |   |       phantom_camera_2d.gd.uid
+|       |   |       phantom_camera_3d.gd
+|       |   |       phantom_camera_3d.gd.uid
+|       |   |       phantom_camera_constants.gd
+|       |   |       phantom_camera_constants.gd.uid
+|       |   |       phantom_camera_noise_emitter_2d.gd
+|       |   |       phantom_camera_noise_emitter_2d.gd.uid
+|       |   |       phantom_camera_noise_emitter_3d.gd
+|       |   |       phantom_camera_noise_emitter_3d.gd.uid
+|       |   |       phantom_camera_tween_director.gd
+|       |   |       phantom_camera_tween_director.gd.uid
+|       |   |       
+|       |   +---phantom_camera_host
+|       |   |       PhantomCameraHost.cs
+|       |   |       PhantomCameraHost.cs.uid
+|       |   |       phantom_camera_host.gd
+|       |   |       phantom_camera_host.gd.uid
+|       |   |       
+|       |   \---resources
+|       |           Camera3DResource.cs
+|       |           Camera3DResource.cs.uid
+|       |           camera_3d_resource.gd
+|       |           camera_3d_resource.gd.uid
+|       |           PhantomCameraNoise2D.cs
+|       |           PhantomCameraNoise2D.cs.uid
+|       |           PhantomCameraNoise3D.cs
+|       |           PhantomCameraNoise3D.cs.uid
+|       |           PhantomCameraTween.cs
+|       |           PhantomCameraTween.cs.uid
+|       |           phantom_camera_noise_2d.gd
+|       |           phantom_camera_noise_2d.gd.uid
+|       |           phantom_camera_noise_3d.gd
+|       |           phantom_camera_noise_3d.gd.uid
+|       |           TweenDirectorResource.cs
+|       |           tween_director_resource.gd
+|       |           tween_director_resource.gd.uid
+|       |           tween_resource.gd
+|       |           tween_resource.gd.uid
+|       |           
+|       \---themes
+|               button_focus.tres
+|               button_hover.tres
+|               button_normal.tres
+|               theme.tres
+|               
++---assets
+|       asteroid.piko
+|       asteroid1.piko
+|       asteroids.png
+|       asteroids.png.import
+|       asteroids_brown.png
+|       asteroids_brown.png.import
+|       MyShip.paint
+|       MyShip.png
+|       MyShip.png.import
+|       my_space_tiles.piko
+|       my_space_tiles.png
+|       my_space_tiles.png.import
+|       my_space_tiles.png.piko
+|       selector.piko
+|       selector.png
+|       selector.png.import
+|       SpaceShooterAssetPack_BackGrounds.png
+|       SpaceShooterAssetPack_BackGrounds.png.import
+|       SpaceShooterAssetPack_IU.png
+|       SpaceShooterAssetPack_IU.png.import
+|       SpaceShooterAssetPack_Miscellaneous.png
+|       SpaceShooterAssetPack_Miscellaneous.png.import
+|       SpaceShooterAssetPack_Projectiles.png
+|       SpaceShooterAssetPack_Projectiles.png.import
+|       SpaceShooterAssetPack_Ships.png
+|       SpaceShooterAssetPack_Ships.png.import
+|       targets.piko
+|       targets.png
+|       targets.png.import
+|       tilemap.png
+|       tilemap.png.import
+|       
++---scenes
+|   |   grid_world.tscn
+|   |   player.tscn
+|   |   
+|   +---entities
+|   |       asteroid.tscn
+|   |       selector.tscn
+|   |       target.tscn
+|   |       trail_line.tscn
+|   |       
+|   \---levels
+|           demo_level.tscn
+|           level_plans.md
+|           
+\---scripts
+    |   base_level_inputs.gd
+    |   base_level_inputs.gd.uid
+    |   debug.gd
+    |   debug.gd.uid
+    |   demo_level.gd
+    |   demo_level.gd.uid
+    |   grid_world.gd
+    |   grid_world.gd.uid
+    |   
+    +---classes
+    |       base_camera.gd
+    |       base_camera.gd.uid
+    |       base_level.gd
+    |       base_level.gd.uid
+    |       grid_object.gd
+    |       grid_object.gd.uid
+    |       
+    +---entities
+    |       asteroid.gd
+    |       asteroid.gd.uid
+    |       grid_overlay.gd
+    |       grid_overlay.gd.uid
+    |       player.gd
+    |       player.gd.uid
+    |       selector.gd
+    |       selector.gd.uid
+    |       target.gd
+    |       target.gd.uid
+    |       tile_map_layer.gd
+    |       tile_map_layer.gd.uid
+    |       trail_line.gd
+    |       trail_line.gd.uid
+    |       
+    \---level_generator
+            grid_scanner.gd
+            grid_scanner.gd.uid
+            level_generator.gd
+            level_generator.gd.uid
+            network_analyzer.gd
+            network_analyzer.gd.uid
+            network_cleaner.gd
+            network_cleaner.gd.uid
+            

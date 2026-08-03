@@ -36,7 +36,7 @@ func scan_jump(origin_pos: Vector2i, direction: Vector2i) -> JumpResult:
 			var pass_count: int = 0
 			
 			for obj in cell_objects:
-				match obj.jump_type:
+w				match obj.jump_type:
 					GridObject.JumpType.BLOCK:
 						is_block = true
 					GridObject.JumpType.LAND, GridObject.JumpType.PORTAL:
