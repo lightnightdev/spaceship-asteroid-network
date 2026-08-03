@@ -5,7 +5,6 @@
 [ext_resource type="Script" uid="uid://c8a6u7wsov8ft" path="res://scripts/entities/tile_map_layer.gd" id="3_28ae7"]
 [ext_resource type="Script" uid="uid://dflipgx641526" path="res://scripts/classes/base_camera.gd" id="4_28ae7"]
 [ext_resource type="PackedScene" uid="uid://dbpu02wv6uj5e" path="res://scenes/grid_world.tscn" id="5_jr7pl"]
-[ext_resource type="Script" uid="uid://4clsc0bop5rv" path="res://scripts/debug.gd" id="7_18ckx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ppgk2"]
 texture = ExtResource("2_4g07q")
@@ -78,7 +77,7 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSet" id="TileSet_0sh1c"]
 sources/0 = SubResource("TileSetAtlasSource_ppgk2")
 
-[node name="Level" type="Node2D" unique_id=1726034218]
+[node name="DemoLevel" type="Node2D" unique_id=1726034218]
 script = ExtResource("1_28ae7")
 
 [node name="Parallax2D" type="Parallax2D" parent="." unique_id=509226926]
@@ -96,6 +95,4 @@ zoom = Vector2(0.8, 0.8)
 script = ExtResource("4_28ae7")
 
 [node name="GridWorld" parent="." unique_id=1040349909 instance=ExtResource("5_jr7pl")]
-
-[node name="debug" type="Node" parent="." unique_id=1538497845]
-script = ExtResource("7_18ckx")
+grid_bounds = Vector2i(15, 15)
