@@ -2,7 +2,7 @@ class_name GridWorld
 extends Node2D
 
 @export_group("Grid Configuration")
-@export var grid_size: float = 32.0
+var grid_size: float = 32.0
 @export var grid_bounds: Vector2i = Vector2i(50, 30)
 
 @export_group("Debug Overlay")
@@ -74,7 +74,10 @@ func remove_object(pos: Vector2i, obj: GridObject) -> void:
 		data_grid[pos].erase(obj)
 		if data_grid[pos].is_empty():
 			data_grid.erase(pos)
-	obj.queue_free()
+	if obj.has_method("on_death"):
+		obj.on_death()
+	else:
+		obj.queue_free()
 
 func grid_to_world(pos: Vector2i) -> Vector2:
 	return Vector2(pos.x * grid_size, pos.y * grid_size) + Vector2(grid_size / 2.0, grid_size / 2.0)

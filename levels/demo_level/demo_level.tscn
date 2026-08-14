@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://yicge48108e0"]
 
-[ext_resource type="Script" uid="uid://oagkgxbkc72q" path="res://scripts/demo_level.gd" id="1_28ae7"]
+[ext_resource type="Script" uid="uid://oagkgxbkc72q" path="res://levels/demo_level/demo_level.gd" id="1_28ae7"]
 [ext_resource type="Texture2D" uid="uid://iyfbukkrh5yb" path="res://assets/my_space_tiles.png" id="2_4g07q"]
-[ext_resource type="Script" uid="uid://c8a6u7wsov8ft" path="res://scripts/entities/tile_map_layer.gd" id="3_28ae7"]
-[ext_resource type="Script" uid="uid://dflipgx641526" path="res://scripts/classes/base_camera.gd" id="4_28ae7"]
-[ext_resource type="PackedScene" uid="uid://dbpu02wv6uj5e" path="res://scenes/grid_world.tscn" id="5_jr7pl"]
+[ext_resource type="Script" uid="uid://c8a6u7wsov8ft" path="res://entities/tile_map_layer/tile_map_layer.gd" id="3_28ae7"]
+[ext_resource type="Script" uid="uid://dflipgx641526" path="res://core/base_camera.gd" id="4_28ae7"]
+[ext_resource type="PackedScene" uid="uid://dbpu02wv6uj5e" path="res://entities/grid_world/grid_world.tscn" id="5_jr7pl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ppgk2"]
 texture = ExtResource("2_4g07q")

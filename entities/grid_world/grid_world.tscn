@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://dbpu02wv6uj5e"]
 
-[ext_resource type="Script" uid="uid://evj7ar5pqi3c" path="res://scripts/grid_world.gd" id="1_2v8sj"]
-[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://scenes/player.tscn" id="2_02hfs"]
-[ext_resource type="PackedScene" uid="uid://d38ga2sn5okvi" path="res://scenes/entities/selector.tscn" id="3_cdmwa"]
+[ext_resource type="Script" uid="uid://evj7ar5pqi3c" path="res://entities/grid_world/grid_world.gd" id="1_2v8sj"]
+[ext_resource type="PackedScene" uid="uid://be8qbmt0fe144" path="res://entities/player/player.tscn" id="2_02hfs"]
+[ext_resource type="PackedScene" uid="uid://d38ga2sn5okvi" path="res://entities/selector/selector.tscn" id="3_cdmwa"]
 
 [node name="GridWorld" type="Node2D" unique_id=1040349909]
 script = ExtResource("1_2v8sj")

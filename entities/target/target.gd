@@ -3,8 +3,10 @@ extends GridObject
 @onready var visual: AnimatedSprite2D = $AnimatedSprite
 
 func _ready() -> void:
+	consume_on_trigger = true
 	jump_type = JumpType.PASS
 	object_name = "target"
+	
 	# 1. Set initial states: 4x scale and 0 degrees rotation
 	scale = Vector2(4.0, 4.0)
 	rotation_degrees = 0.0
@@ -27,14 +29,16 @@ func _ready() -> void:
 	# set_parallel(true) automatically waits for BOTH properties to complete before firing 'finished'
 	tween.chain().tween_callback(_on_shrink_finished)
 
-func on_player_passed(player_node: Node2D) -> void:
+func on_death() -> void:
+	z_index = 2
 	var tween = create_tween().set_parallel(true)
 	tween.tween_property(self, "scale", Vector2(2, 2), 2.0)\
 		.set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_OUT)
 	tween.tween_property(self, "modulate:a", 0.0, 0.5)
-	# Chain a callback after both parallel steps finish
 	tween.chain().tween_callback(queue_free)
-	print("target hit")
+	
+func on_player_passed(player_node: Node2D) -> void:
+	on_death()
 
 func _on_shrink_finished() -> void:
 	if visual:

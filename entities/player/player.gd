@@ -14,16 +14,11 @@ func move_towards_dir(dir: Vector2i, target_world_pos: Vector2, duration: float 
 		return
 		
 	is_moving = true
-	
 	rotation = Vector2(dir).angle() + SPRITE_ANGLE_OFFSET
 	
-	# Stop animation loop to take manual frame control
 	visual.stop()
-	
-	# Frame 1: Initial movement start
 	visual.frame = 1
 	
-	# Tween movement to destination over 0.5s
 	if move_tween and move_tween.is_running():
 		move_tween.kill()
 		
@@ -32,20 +27,20 @@ func move_towards_dir(dir: Vector2i, target_world_pos: Vector2, duration: float 
 		.set_trans(Tween.TRANS_SINE)\
 		.set_ease(Tween.EASE_OUT)
 		
-	# Start alternating frames 2 & 3
-	_run_moving_animation_loop()
+	_run_moving_animation_loop(duration)
 	
 	await move_tween.finished
 	
-	# Reset state to idle
 	is_moving = false
 	visual.frame = 0
 
 
-func _run_moving_animation_loop() -> void:
+func _run_moving_animation_loop(duration: float) -> void:
 	var toggle_frame: bool = false
+	# Step frame speed proportionally to overall move speed
+	var step_delay: float = clamp(duration / 4.0, 0.01, 0.1)
 	
 	while is_moving:
 		visual.frame = 3 if toggle_frame else 2
 		toggle_frame = not toggle_frame
-		await get_tree().create_timer(0.1).timeout
+		await get_tree().create_timer(step_delay).timeout

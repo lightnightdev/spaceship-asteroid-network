@@ -1,6 +1,6 @@
 extends BaseLevel
 
-var TargetScene = preload("res://scenes/entities/target.tscn")
+var TargetScene = preload("res://entities/target/target.tscn")
 var targets_grid_positions: Array[Vector2i] = []
 
 func _ready() -> void:
@@ -47,13 +47,6 @@ func _ready() -> void:
 			for obj in grid_world.get_objects_at(pos):
 				if obj.has_method("set_distance_display"):
 					obj.set_distance_display(distances.get(pos, -1))
-
-func _process(_delta: float) -> void:
-	# Selector Movement Input queueing
-	for action in DIRECTIONS:
-		if Input.is_action_just_pressed(action):
-			_enqueue_selector_move(DIRECTIONS[action])
-			break
 
 func spawn_target_node(grid_pos: Vector2i) -> void:
 	var target_instance: GridObject = TargetScene.instantiate()
