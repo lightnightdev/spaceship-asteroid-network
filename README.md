@@ -1,4 +1,4 @@
-# spaceship-asteroid-network
+# Network Algorithms in an Asteroid Game
 
 A procedural grid generation and network traversal project built with Godot 4.7. While presented as a 2D space-themed movement game, the project primarily serves as a practical implementation of algorithmic spatial partitioning, graph connectivity (Union-Find), and breadth-first pathfinding.
 
