@@ -4,6 +4,13 @@ A procedural grid generation and network traversal project built with Godot 4.7.
 
 ---
 
+## Developer's Note
+
+Thanks for checking out my repo! While AI was used to research, review, and help with scaffolding, the overall project layout and algorithm implementations were my own. The pixel art was also my own.
+It was a lot of fun to put together, and writing the network cleaner was especially fun.
+
+---
+
 ## Overview & Key Algorithms
 
 The core mechanics focus on procedural grid generation, network bridging, and analyzing node reachability across orthogonal movement vectors.
@@ -31,7 +38,7 @@ The core mechanics focus on procedural grid generation, network bridging, and an
 
 ## License & Usage Terms
 
-**Copyright © 2026. All Rights Reserved.**
+**Copyright © 2026. Joseph Chang. All Rights Reserved.**
 
 This repository is publicly hosted for portfolio, educational, and demonstration purposes only. 
 
